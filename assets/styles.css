@@ -1,0 +1,301 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4fb; /* Fondo azul muy claro */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #00509e; /* Azul más oscuro */
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    color: #003366; /* Azul más intenso */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f7faff; /* Azul muy claro */
+    border: 1px solid #cce0ff; /* Azul más suave */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #b0c7e4;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Product Section */
+#productos {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e7f3ff; /* Azul claro */
+    border-radius: 8px;
+    border: 1px solid #cce0ff;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.producto label {
+    flex: 1;
+    padding: 5px;
+}
+
+.producto input {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #b0c7e4;
+    border-radius: 5px;
+}
+
+.producto button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #b0c7e4; /* Azul claro */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #00509e; /* Azul más oscuro */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #dce3f0; /* Azul claro al pasar el cursor */
+}
+
+/* Button Styles */
+button.agregar-producto {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.agregar-producto:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+button.ver-detalles, 
+button.eliminar-venta, 
+button.estado-lista {
+    padding: 8px 12px;
+    font-size: 1em;
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.ver-detalles:hover, 
+button.eliminar-venta:hover, 
+button.estado-lista:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+button.eliminar-venta {
+    background-color: #ff4d4d; /* Rojo suave para el botón de eliminar */
+}
+
+button.eliminar-venta:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+}
+/* Mejora de la sección de búsqueda */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f7faff; /* Fondo azul claro */
+    border: 1px solid #cce0ff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-section input[type="text"], 
+.filter-section select {
+    padding: 10px;
+    border: 1px solid #b0c7e4;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 45%; /* Ancho ajustado para que ambos elementos se acomoden bien */
+}
+
+.filter-section input[type="text"]:focus, 
+.filter-section select:focus {
+    border-color: #007bff; /* Azul más fuerte al enfocarse */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Mejora del botón de descargar PDF */
+#descargar-reporte {
+    /*display: block;*/
+    margin: 20px auto; /* Centrado en la parte inferior */
+    padding: 12px 20px; /* Tamaño más grande */
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bordes más redondeados */
+    cursor: pointer;
+    font-size: 1.1em; /* Texto más grande */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#descargar-reporte:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el cursor */
+}
+
+#descargar-reporte:active {
+    background-color: #004080; /* Azul aún más oscuro al hacer clic */
+    transform: translateY(1px); /* Efecto de hundimiento al presionar */
+}
+/* Estilos para la sección de búsqueda */
+.search-section {
+    background-color: #f7faff; /* Fondo azul muy claro */
+    padding: 15px;
+    border: 1px solid #cce0ff; /* Borde azul suave */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se adapten en dispositivos más pequeños */
+}
+
+.search-section h2 {
+    flex-basis: 100%; /* El título ocupa toda la fila */
+    text-align: center;
+    color: #00509e; /* Azul más oscuro */
+    margin-bottom: 10px;
+}
+
+.search-section label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #00509e;
+}
+
+.search-section input[type="text"],
+.search-section select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #b0c7e4;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+    flex: 1; /* Permite que los elementos ocupen el espacio disponible */
+    max-width: 300px; /* Limita el tamaño máximo de los campos */
+}
+
+.search-section input[type="text"]:focus,
+.search-section select:focus {
+    border-color: #007bff; /* Azul principal */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Mejora para los selectores de estado */
+.search-section select {
+    cursor: pointer;
+    background-color: #ffffff; /* Fondo blanco para mejor contraste */
+}
